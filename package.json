@@ -4,7 +4,7 @@
   "description": "Convert PPT files to pdf , Pdf files to Images and PPT files to Images",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",

@@ -6,6 +6,10 @@ const powerpointToImages = async(inputFileName,outputDir)=>{
 
   return new Promise((resolve,reject)=>{
     try {
+      if (!fs.existsSync(outputDir)){
+        fs.mkdirSync(outputDir);
+      }
+  
       let timestamp = new Date().getTime();
       PowerPointToPdf(inputFileName,outputDir,timestamp).then(pdffileName => {
           PdfToImages(pdffileName,outputDir,timestamp).then(imageArray => {
@@ -31,6 +35,9 @@ const powerpointToImages = async(inputFileName,outputDir)=>{
 const PowerPointToPdf = async (inputFileName,outputDir,timestamp=new Date().getTime())=>{
   return new Promise((resolve, reject) => {
     try {
+      if (!fs.existsSync(outputDir)){
+        fs.mkdirSync(outputDir);
+      }
       let outputPdfFile =  outputDir+timestamp + '.pdf';
       let pdfConversionCommand = 'unoconv -f pdf -o ' +outputPdfFile + ' ' +inputFileName;
       exec(pdfConversionCommand, (error, stdout, stderr) => {
@@ -50,6 +57,9 @@ const PowerPointToPdf = async (inputFileName,outputDir,timestamp=new Date().getT
 const PdfToImages = async (inputFileName,outputDir,timestamp=new Date().getTime())=>{
   return new Promise((resolve, reject) => {
     try {
+      if (!fs.existsSync(outputDir)){
+        fs.mkdirSync(outputDir);
+      }
       let outputImageFile =  outputDir+timestamp+ '.png';
       let pdfConversionCommand = 'convert -resize 1200 -density 200 ' + inputFileName + ' ' + outputImageFile;
       exec(pdfConversionCommand, (error, stdout, stderr) => {
