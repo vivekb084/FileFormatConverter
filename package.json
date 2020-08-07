@@ -1,0 +1,28 @@
+{
+  "name": "file-converter",
+  "version": "1.0.0",
+  "description": "Convert PPT files to pdf , Pdf files to Images and PPT files to Images",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekb084/fileConverter.git"
+  },
+  "keywords": [
+    "fileConverter",
+    "ppt2png",
+    "ppt2pdf",
+    "pdftopng",
+    "ppttopdf",
+    "pdf2png",
+    "ppttopng"
+  ],
+  "author": "Vivek Bindal",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vivekb084/fileConverter/issues"
+  },
+  "homepage": "https://github.com/vivekb084/fileConverter#readme"
+}
