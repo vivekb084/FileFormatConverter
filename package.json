@@ -1,5 +1,5 @@
 {
-  "name": "file-converter",
+  "name": "file-format-converter",
   "version": "1.0.0",
   "description": "Convert PPT files to pdf , Pdf files to Images and PPT files to Images",
   "main": "index.js",
