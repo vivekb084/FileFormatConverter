@@ -5,15 +5,18 @@ This node package let you convert documents from PPT to pdf , PDF to Images and 
 # Requirments 
 FileFormatConverter requires following softwares to be installed
 
-unoconv
-LibreOffice-dev
-ImageMagick
+unoconv<br />
+LibreOffice-dev<br />
+ImageMagick<br />
 
 # Installation
 ```npm i file-format-converter```
 
-Debian/Ubunut:
+# Debian/Ubuntu:
 ```sudo apt-get install unoconv libreoffice-dev imagemagick```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 # Basic Usage
 ```
@@ -32,7 +35,7 @@ fileConverter.powerpointToImages('./Sample/Example.pptx','./output/').then(image
     console.log("Images Data ",imageAray);
 })
 
-// //Convert PDF to Images
+//Convert PDF to Images
 
 fileConverter.PdfToImages('./Sample/Example.pdf','./output/').then(imageAray =>{
     console.log("Images Data ",imageAray);
