@@ -10,13 +10,13 @@ LibreOffice-dev
 ImageMagick
 
 # Installation
-npm i file-format-converter
+```npm i file-format-converter```
 
 Debian/Ubunut:
-sudo apt-get install unoconv libreoffice-dev imagemagick
+```sudo apt-get install unoconv libreoffice-dev imagemagick```
 
 # Basic Usage
-
+```
 const fileConverter = require('./index')
 
 
@@ -38,3 +38,4 @@ fileConverter.PdfToImages('./Sample/Example.pdf','./output/').then(imageAray =>{
     console.log("Images Data ",imageAray);
 })
 
+```
