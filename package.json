@@ -20,9 +20,12 @@
     "ppttopng"
   ],
   "author": "Vivek Bindal",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/vivekb084/fileConverter/issues"
+  },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
   },
   "homepage": "https://github.com/vivekb084/fileConverter#readme"
 }
