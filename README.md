@@ -1,4 +1,5 @@
 # FileFormatConverter
+Help me continue making free projects by provide some funding. UPI ID - vivekb084@okicici (Within India)
 This node package let you convert documents from PPT to pdf , PDF to Images and PPT to Images.
 
 
